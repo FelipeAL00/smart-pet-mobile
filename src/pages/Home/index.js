@@ -1,7 +1,7 @@
 import React from "react";
 import Icon from "react-native-vector-icons/MaterialCommunityIcons";
 import Carrossel from "./Carrossel";
-import Produtos from "./Produtos";
+import Produtos from "../../components/Produtos";
 import carrosselImage from "../../assets/imgCarrossel.jpg";
 import Avaliado from "./Avaliado";
 
