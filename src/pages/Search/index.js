@@ -14,7 +14,7 @@ import {
 
 import Produtos from "../../components/Produtos";
 
-function Search() {
+function Search({navigation}) {
   return (
     <Container>
       <SearchBackground>
@@ -38,7 +38,7 @@ function Search() {
       </BuscasRecentes>
       <ProcuraPorClick>
         <Title>O que procura?</Title>
-        <Produtos />
+        <Produtos onPress={() => navigation.navigate("Alimentos") } />
       </ProcuraPorClick>
     </Container>
   );

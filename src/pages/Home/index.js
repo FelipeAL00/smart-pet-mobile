@@ -9,15 +9,20 @@ import { Container, List } from "./styles";
 
 import data from "../../data/data";
 
-function Home() {
+function Home({ navigation }) {
   return (
     <Container>
-      <Produtos />
+      <Produtos onPress={() => navigation.navigate("Alimentos")} />
       <Carrossel image={carrosselImage} />
       <List
         data={data}
         keyExtractor={(item) => String(item.id)}
-        renderItem={(item) => <Avaliado item={item} />}
+        renderItem={(item) => (
+          <Avaliado
+            item={item}
+            onPress={() => navigation.navigate("PetShop")}
+          />
+        )}
       />
     </Container>
   );

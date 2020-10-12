@@ -1,11 +1,19 @@
 import styled from "styled-components/native";
+import { BaseButton } from "react-native-gesture-handler";
 
 export const Container = styled.View`
   background: #eee;
   border-radius: 45px;
   height: 90px;
   width: 90px;
-  border: #2dc7ff 2px;
+  border-color: #2dc7ff;
+  border-width: 2px;
+`;
+
+export const Button = styled(BaseButton)`
+  border-radius: 45px;
+  height: 90px;
+  width: 90px;
 `;
 
 export const Description = styled.Text`

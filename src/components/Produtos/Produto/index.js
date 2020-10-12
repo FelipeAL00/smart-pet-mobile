@@ -1,13 +1,14 @@
 import React from "react";
-import { View } from "react-native";
 
-import { Container, Description, Box, Image } from "./styles";
+import { Container, Description, Box, Image, Button } from "./styles";
 
-function Produto({ description, img }) {
+function Produto({ description, img, ...rest }) {
   return (
     <Box>
       <Container>
-        <Image source={img ? img : ""}/> 
+        <Button {...rest}>
+          <Image source={img ? img : ""} />
+        </Button>
       </Container>
       <Description>{description ? description : ""}</Description>
     </Box>

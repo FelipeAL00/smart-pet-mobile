@@ -3,9 +3,9 @@ import Icon from "react-native-vector-icons/MaterialIcons";
 
 import { Container, Left, SymbleEnterprise, Info, Name, Right } from "./styles";
 
-function Avaliado({ item }) {
+function Avaliado({ item, ...rest }) {
   return (
-    <Container>
+    <Container {...rest}>
       <Left>
         <SymbleEnterprise
           color={item.item.color}

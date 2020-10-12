@@ -7,12 +7,12 @@ import acessorios from "../../assets/acessorios.jpg";
 import alimentos from "../../assets/racao.jpg";
 import saude from "../../assets/saude.jpg";
 
-function Produtos() {
+function Produtos({ ...rest }) {
   return (
     <Container>
-      <Produto description="Alimentos" img={alimentos} />
-      <Produto description="Acessórios" img={acessorios} />
-      <Produto description="Saúde" img={saude} />
+      <Produto {...rest} description="Alimentos" img={alimentos} />
+      <Produto {...rest} description="Acessórios" img={acessorios} />
+      <Produto {...rest} description="Saúde" img={saude} />
     </Container>
   );
 }
