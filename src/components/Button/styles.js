@@ -9,11 +9,11 @@ export const Container = styled(BaseButton)`
   bottom: 0;
   width: 100%;
   min-width: 1000px;
-  background: #2dc7ff;
+  background: ${(props) => (props.color ? props.color : "#2dc7ff")};
 `;
 
 export const Text = styled.Text`
-  color: #fff;
+  color: ${(props) => (props.textColor ? props.textColor : "#fff")};
   font-weight: bold;
   font-size: 16px;
 `;

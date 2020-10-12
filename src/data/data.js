@@ -10,7 +10,7 @@ export default [
     id: 2,
     name: "Point do Pet",
     url:
-    "https://www.agenciadosite.com.br/wp-content/uploads/2017/11/point-do-pet-768x576.jpg",
+      "https://www.agenciadosite.com.br/wp-content/uploads/2017/11/point-do-pet-768x576.jpg",
     color: "#f76abc",
   },
   {
@@ -24,7 +24,17 @@ export default [
     id: 4,
     name: "NutriPet Rações",
     url:
-    "https://www.agenciadosite.com.br/wp-content/uploads/2017/11/logo-nutripet.jpg",
+      "https://www.agenciadosite.com.br/wp-content/uploads/2017/11/logo-nutripet.jpg",
+    color: "#f76abc",
+  },
+];
+
+export const andamento = [
+  {
+    id: 1,
+    name: "Bigodinho Pets",
+    url:
+      "https://www.agenciadosite.com.br/wp-content/uploads/2017/11/logo-para-petshop-768x576.jpg",
     color: "#f76abc",
   },
 ];
